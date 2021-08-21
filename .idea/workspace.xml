@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4e3e87a-bb97-481c-a753-9603050f1afa" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/test/converter.js" afterDir="false" />
+    <list default="true" id="c4e3e87a-bb97-481c-a753-9603050f1afa" name="Default Changelist" comment="update route">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.17.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Dockerfile" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -45,14 +47,22 @@
       <recent name="C:\Users\mike\WebstormProjects\api-gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.test">
-    <configuration name="start" type="NodeJSConfigurationType" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.www">
     <configuration name="www" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
       <envs>
         <env name="DEBUG" value="*" />
       </envs>
+      <method v="2" />
+    </configuration>
+    <configuration name="Build" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="" />
+          <option name="containerName" value="api-gategway" />
+          <option name="commandLineOptions" value="-p 3000:3000" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="test" type="mocha-javascript-test-runner">
@@ -69,8 +79,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.Build" />
       <item itemvalue="Mocha.test" />
-      <item itemvalue="Node.js.start" />
       <item itemvalue="Node.js.www" />
     </list>
     <recent_temporary>
@@ -91,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1629427098136</updated>
       <workItem from="1629427099268" duration="2341000" />
-      <workItem from="1629429466783" duration="878000" />
+      <workItem from="1629429466783" duration="1499000" />
+      <workItem from="1629513111186" duration="2960000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1629428395691</created>
@@ -121,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629430001500</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tests">
+      <created>1629430377868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629430377868</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update route">
+      <created>1629513839326</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629513839326</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +166,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="update route" />
+    <option name="LAST_COMMIT_MESSAGE" value="update route" />
   </component>
 </project>
