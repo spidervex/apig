@@ -7,7 +7,7 @@ const debugLog = require('debug')('base');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.status(200);
-  res.json({ping: 'pongs'});
+  res.json({ping: 'ponging'});
 });
 
 

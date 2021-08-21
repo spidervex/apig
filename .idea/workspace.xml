@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4e3e87a-bb97-481c-a753-9603050f1afa" name="Default Changelist" comment="update route">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+    <list default="true" id="c4e3e87a-bb97-481c-a753-9603050f1afa" name="Default Changelist" comment="ci update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
@@ -102,7 +98,7 @@
       <updated>1629427098136</updated>
       <workItem from="1629427099268" duration="2341000" />
       <workItem from="1629429466783" duration="1499000" />
-      <workItem from="1629513111186" duration="2960000" />
+      <workItem from="1629513111186" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1629428395691</created>
@@ -146,7 +142,28 @@
       <option name="project" value="LOCAL" />
       <updated>1629513839326</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="docker">
+      <created>1629516122635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629516122635</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ci update">
+      <created>1629516175924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629516175925</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ci update">
+      <created>1629516207972</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629516207972</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +185,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="tests" />
     <MESSAGE value="update route" />
-    <option name="LAST_COMMIT_MESSAGE" value="update route" />
+    <MESSAGE value="docker" />
+    <MESSAGE value="ci update" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci update" />
   </component>
 </project>
