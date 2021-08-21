@@ -2,6 +2,14 @@ jobs:
   build:
     steps:
       # ... steps for building/testing app ...
+     - checkout
+     # start proprietary DB using private Docker image
+     # with credentials stored in the UI
+     - run: |
+         echo "$DOCKER_PASS" | docker login spidervex.azurecr.io --username $DOCKER_USER --password-stdin
 
-      - setup_remote_docker:
-        version: 19.03.13
+     # build the application image
+     - run: docker build -t spidervex.azurecr.io/api-gateway:$CIRCLE_BRANCH .
+
+     # deploy the image
+     - run: docker push spidervex.azurecr.io/api-gateway:$CIRCLE_BRANCH
