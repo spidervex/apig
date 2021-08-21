@@ -10,7 +10,6 @@ jobs:
      # with credentials stored in the UI
      - setup_remote_docker:
           version: 19.03.13
-          docker_layer_caching: true
 
      - run: |
          echo "$DOCKER_PASS" | docker login spidervex.azurecr.io --username $DOCKER_USER --password-stdin
