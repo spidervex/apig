@@ -3,10 +3,8 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.1
-
-workflows:
-  sample:
-    jobs:
-      build:
-        docker:
-          - image: buildpack-deps:trusty
+  
+jobs:
+  build:
+    docker:
+      - image: buildpack-deps:trusty
