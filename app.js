@@ -1,7 +1,7 @@
-var debug = require('debug')('auth:server');
-var express = require('express');
-var logger = require('morgan');
-var cors = require('cors')
+const debug = require('debug')('auth:server');
+const express = require('express');
+const logger = require('morgan');
+const cors = require('cors')
 
 const debugLog = require('debug')('express');
 
