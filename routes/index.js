@@ -11,10 +11,11 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.post('/login', async (req, res, next) => {
+
+router.get('/token', async (req, res, next) => {
 
   const tokenData = {
-    userId: 'a',
+    userId: 'abc',
     exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24 * 365)
   };
 
