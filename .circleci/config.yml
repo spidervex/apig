@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      # ... steps for building/testing app ...
+      - checkout
+
+      - run: |
+          echo "$DOCKER_PASS" | docker login spidervex.azurecr.io --username $DOCKER_USER --password-stdin
+      # build the application image
+      - run: docker build -t spidervex.azurecr.io/api-gateway:v1 .
+
+      # deploy the image
+      - run: docker push spidervex.azurecr.io/api-gateway:v1
